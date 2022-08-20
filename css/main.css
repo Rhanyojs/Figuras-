@@ -7,27 +7,51 @@
 body {
   font-family: sans-serif;
   font-size: 18px;
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 
 /*      ENCABEZADO 
 ==========================*/
 
 .header {
-  background-color: #253062;
+  background-color: #292929;
   text-align: center;
   padding: 5px 0;
+  transform-origin: left;
 }
 
 .header-title {
-  color: #fff;
+  color: rgb(255, 163, 5);
   padding: 10px 0;
-  text-transform: uppercase;
+  text-decoration: solid;
+  animation-name: the;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+@keyframes the {
+  30% {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  30% {
+    margin-inline-start: 50%;
+  }
 }
 
 .header-description {
   color: #fff;
   padding: 10px 0;
+  animation-name: des;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+
+@keyframes des {
+  30% {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-inline-end: 35%;
+  }
 }
 
 /*      RESPUESTA
@@ -58,19 +82,33 @@ body {
 .box {
   width: 30%;
   height: 600px;
-  border: 3px solid #253062;
-  border-radius: 10px;
+  border: 3px solid #5bfd16;
+  border-bottom-color: rgb(255, 39, 215);
+  border-top-color: #b4579a;
+  border-bottom-style: dotted;
+  border-top-style: dotted;
+  border-bottom-width: 3px;
+  border-bottom-left-radius: 190px 290px;
+  border-bottom-right-radius: 800px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-inline-end-style: dashed;
+  border-left-color: #b4579a;
+  border-bottom-color: #b4579a;
   margin: 15px;
   float: left;
+  background-image: url(/js/img/ap.jpg);
+  background-position: 25% 10px;
 }
 
 /*  ENCABEZADO y MAIN DE LA CAJA
 =================================*/
 .box-header {
-  background-color: #253062;
+  text-combine-upright: unset;
   text-align: center;
-  padding: 15px 0;
-  color: #fff;
+  color: rgb(255, 163, 5);
+  background-color: #73ff54;
+  background: fixed;
 }
 
 .box-main {
@@ -81,6 +119,7 @@ body {
 .box-main__text {
   font-size: 20px;
   font-weight: bold;
+  color: #eeece1;
 }
 
 .box-main__input {
@@ -91,30 +130,38 @@ body {
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  color: #253062;
-  border: solid #253062;
-  border-radius: 5px;
+
+  border: solid #afe027;
+  border-top-width: 100%;
+  border-bottom-left-radius: 50px 10px;
+  border-bottom-right-radius: 50px 10px;
+  border-width: 2px;
+  border-bottom-style: hidden;
+  background-color: rgb(157, 204, 206);
 }
 
 .box-main__btn {
-  background-color: #253062;
-  color: #fff;
-  width: 120px;
-  font-size: 18px;
+  background-color: #07b0a2;
+  color: rgb(243, 255, 10);
+  width: 130px;
+  font-size: 17px;
   padding: 10px;
   text-align: center;
   margin: 5px;
-  border-style: none;
-  border-radius: 10px;
+  border-style: solid;
+  border-radius: 50px;
+  border-left-color: #b4579a;
+  border-right-color: #5bfd16;
+  border-block: inherit;
 }
 
 .box-main__btn:hover {
-  background-color: #1b2550;
+  background-color: #4e5008;
   cursor: pointer;
 }
 
 .box-main__btn:active {
-  background-color: #4c5580;
+  background-color: #2c9115;
 }
 
 /*Web Responsivo*/
